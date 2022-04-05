@@ -237,7 +237,7 @@ section:nth-child(2)
   margin: 15px 10px 10px 10px;
   padding: 4px;
   border: 2px lightgray solid;
-  border-radius: 2em;
+  border-radius: 100%;
 }
 
 section:nth-child(2) p
@@ -253,8 +253,6 @@ section:nth-child(3)
   width: 100%; 
   margin-bottom: 60px;
 }
-
-
 
 section:nth-child(3) article
 {
@@ -352,7 +350,8 @@ section:nth-child(3) aside header
 section:nth-child(3) aside header h1
 {
   font-size: 18px;
-  margin-left: 7%;
+  margin-left: 4%;
+  margin-bottom: 0;
 }
 
 section:nth-child(3) aside header span
@@ -362,9 +361,10 @@ section:nth-child(3) aside header span
   font-size: 18px;
 }
 
-section:nth-child(3) article:last-child
+section:nth-child(3) aside div
 {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -372,30 +372,30 @@ section:nth-child(3) article:last-child
 {
   border-radius: 18px;
   background-color: white;
-  width: 75%;
+  width: 70%;
   height: 130px;
   display: flex;
   padding: 5px 5px 5px 5px;
-  margin: 30px 30px -5px 35px;
+  margin-top: 30px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .card_popular figure
 {
   display: flex;
+  width: 100%;
 }
 
 .card_popular figcaption
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding-left: 10px;
+  padding-left: 15px; 
 }
 
 .card_popular img
 {
-  width: 110px;
+  width: 45%;
   height: 100%;
   object-fit:cover;
   border-radius: 14px 0 0 14px;
@@ -403,14 +403,21 @@ section:nth-child(3) article:last-child
 
 .card_popular h2
 {
-  width: 99%;
+  padding-top: 10px;
+  padding-bottom: 8px;
   font-size: 13px;
 }
 
 .card_popular p
 {
-  padding-bottom: 25px;
   font-size: 12px;
+}
+
+.card_popular .notation
+{
+  flex-direction: row;
+  padding-top: 100px;
+  position: absolute;
 }
 
 .card_popular:hover
@@ -548,18 +555,8 @@ footer h1
 
 footer div
 {
-  margin: 40px 0 0 0;
-  margin-right: 150px;
-}
-
-footer nav
-{
-  margin-right: 40px;
-}
-
-footer ul
-{
-  width: 230px;
+  margin-top: 40px;
+  padding-right: 18%;
 }
 
 footer li
@@ -601,9 +598,7 @@ footer li:hover
 
   header div:last-child
   {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 4%;
   }
 
   header div:last-child nav
@@ -691,6 +686,11 @@ footer li:hover
     font-size: 10px;
   }
 
+  .card_lodging .notation
+  {
+    margin: 15px 0 0 8px;
+  }
+
   /* Lodging section - "Populars" - tablet*/
 
   main section:nth-child(3) aside
@@ -718,26 +718,17 @@ footer li:hover
     margin: 10% 0 0 8%;
   }
 
-  main section:nth-child(3) aside article
+  main section:nth-child(3) aside div
   {
-    flex-direction: row;
+    display: flex;
     width: 100%;
     margin-bottom: 30px;
   }
 
   .card_popular
   {
+    width: 50%;
     margin: 10px 1% 10px 2%;
-  }
-
-  .card_popular h2 
-  {
-    font-size: 12px;
-  }
-
-  .card_popular p
-  {
-    font-size: 10px;
   }
 
   /* Activities section - tablet*/
@@ -808,16 +799,10 @@ footer li:hover
 
   /* FOOTER - tablet*/
 
-  footer nav
-  {
-    margin-right: 0;
-  }
-
   footer div
-  {
-    margin-left: 1%;
-  }
-  
+{
+  padding-right: 14%;
+}
 
   footer h1
   {
@@ -954,13 +939,13 @@ footer li:hover
 
   /* Filters section - hight mobile*/ 
 
-  main section:nth-child(1)
+  main section:first-child
   {
     width: 100%;
     margin-left: 5%;
   }
 
-  main section:nth-child(1) h1
+  main section:first-child h1
   {
     align-self: inherit;
     font-size: 22px;
@@ -1021,35 +1006,36 @@ footer li:hover
     margin: 0;
     width: 100%;
     height: 100%;
-    display: flex;
     flex-direction: column;
     border-radius: 0px;
   }
 
   main section:nth-child(3) aside header
   {
-    height: 120px;
     width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
 
   main section:nth-child(3) aside header h1
   {
-    font-size: 25px;
     text-align: left;
-    margin-left: 18%;
+    width: auto;
+    font-size: 25px;
+    margin: 0 200px 0 0;
   }
 
   main section:nth-child(3) aside header span
   {
-    margin-right: 19%;
+    margin:0;
   }
 
-  main section:nth-child(3) article:last-child
+  main section:nth-child(3) aside div
   {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
 
   .card_popular
@@ -1061,36 +1047,37 @@ footer li:hover
     height: 180px;
   }
 
-  .card_popular img
-  { 
-    width: 200px;
-  }
-
   .card_popular figcaption
   {
-    margin-left: 10px;
+    padding-left: 30px;
+  }
+
+  .card_popular img
+  {
+    width: 45%;
   }
 
   .card_popular h2
   {
-    width: 100%;
-    font-size: 17px;
+    font-size: 20px;
+    padding-bottom: 15px;
   }
 
   .card_popular p
   {
-    padding-bottom: 50px;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .card_popular .notation
   {
-    margin-left: 0; 
+    width: auto;
+    margin: 0;
+    padding-top: 140px;
   }
 
   /*Lodging section - "Lodging" - hight mobile*/
 
-  main section:nth-child(3) article:first-child
+  main section:nth-child(3) article
   {
     background-color: white;
     width: 100%;
@@ -1100,16 +1087,23 @@ footer li:hover
   {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 20px;
   }
 
-  main section:nth-child(3) header h1
+  main section:nth-child(3) article header
+  {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+
+  main section:nth-child(3) article header h1
   {
     font-size: 25px;
     width: 100%;
-    margin-top: 10%;
-    margin-left: 19%;
-    margin-bottom: 6%;
-    text-align: left;
+    height: auto;
+    margin: 0;
+    padding-right: 130px;
+    text-align: center;
   }
 
   #lodging_city
@@ -1125,16 +1119,17 @@ footer li:hover
   section:nth-child(3) footer
   {
     background-color: white;
-    margin-top: 15px;
-    margin-left: 10%;
+    align-items: center;
+    padding-right: 350px;
   }
 
   section:nth-child(3) footer p
   {
     font-size: 22px;
+    width: 150px;
   }
 
-  main section:nth-child(3) article:first-child .notation
+  main section:nth-child(3) article.notation
   {
     display: flex;
     flex-direction: row;
@@ -1159,23 +1154,23 @@ footer li:hover
     height: 160px;
   }
 
-  .card_lodging figcaption
-  {
-    padding-left: 5px;
-  }
-
   .card_lodging h2
   {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 300px;
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .card_lodging p
   {
-    margin-top: 10px;
-    font-size: 15px;
+    margin-top: 8px;
+    font-size: 17px;
     width: 200px;
+  }
+
+  .card_lodging .notation
+  {
+    margin: 10px 0 0 8px;
   }
 
   /* Reorder cards - hight mobile */
@@ -1207,26 +1202,25 @@ footer li:hover
 
   /* Activities section - hight mobile*/
 
-  main section:nth-child(4)
+  main section:last-child
   {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
   }
 
-  main section:nth-child(4) header
+  main section:last-child header
   {
-    padding-left: 14%;
-    margin-bottom: 5%;
+    padding-right: 210px;
   }
 
-  main section:nth-child(4) header h1
+  main section:last-child header h1
   {
-    text-align: left;
+    text-align: center;
     font-size: 25px;
   }
 
-  main section:nth-child(4) article
+  main section:last-child article
   {
     align-items: center;
     height: auto;
@@ -1296,7 +1290,7 @@ footer li:hover
 
   footer div
   {
-    margin-top:0;
+    padding-right: 0;
     margin-left: 5%;
   }
 
@@ -1336,6 +1330,11 @@ footer li:hover
       width: 100%;
     }
 
+    header div:last-child
+    {
+      margin-left: 3%;
+    }
+
     #position_form
     {
       height: 50px;
@@ -1364,38 +1363,94 @@ footer li:hover
 
     main section:first-child
     {
-      margin-left: 5%;
+      width: 100%;
+      margin-left: 3%;
+    }
+
+    /* Information section - medium mobile*/
+    
+    main section:nth-child(2)
+    {
+      width: 100%;
+      margin: 0 0 25px 0;
+    }
+
+    #information
+    {
+      width: 32px;
     }
 
     /* Lodging section - "Populars" - medium mobile*/
 
+    main section:nth-child(3) aside header
+    {
+      width: 100%;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+
     main section:nth-child(3) aside header h1
     {
-      margin-left: 8%;
+      font-size: 22px;
+      text-align: left;
+      width: auto;
+      margin: 0;
+      padding-left: 35px;
     }
 
     main section:nth-child(3) aside header span
     {
-      margin-right: 10%;
+      padding-right: 35px;
+    }
+
+    .card_popular
+    {
+      height: 170px;
+    }
+
+    .card_popular h2
+    {
+      font-size: 18px;
+    }
+
+    .card_popular p
+    {
+      font-size: 15px;
+    }
+
+    .card_popular figcaption
+    {
+      padding-left: 10px;
     }
 
     /*Lodging section - "Lodging" - medium mobile*/
 
-    main section:nth-child(3) article:first-child header h1
+    main section:nth-child(3) article header h1
     {
-      margin-left: 8%;
+      width: auto;
+      text-align: left;
+      padding-right: 0;
+      padding-left: 8%;
+      font-size: 22px;
     }
   
-    main section:nth-child(3) article:first-child footer
+    main section:nth-child(3) article footer
     {
       margin-left: 4%;
+      font-size: 20px;
     }
 
     /* Activities section - medium mobile*/
 
-    main section:nth-child(4) header
+    main section:last-child header
     {
-      padding: 0 0 0 8%;
+      padding: 0 0 0 8%;  
+    }
+
+    main section:last-child header h1
+    {
+      text-align: left;
     }
 
     /* FOOTER - medium mobile*/
@@ -1472,20 +1527,18 @@ footer li:hover
       font-size: 15px;
     }
 
-    
+    /* Logo information section - small mobile */
+
+    #information
+    {
+      width: 35px;
+    }
 
     /* Lodging section - "Populars" - small mobile*/
-
-    main section:nth-child(3) aside header
-    {
-      height: 50px;
-      margin-top: 40px;
-    }
 
     main section:nth-child(3) aside header h1
     {
       font-size: 18px;
-      margin: 0;
       padding-left: 25px;
     }
 
@@ -1500,24 +1553,26 @@ footer li:hover
     {
       height: 120px;
     }
+    .card_popular img
+    {
+      width: 40%;
+    }
 
     .card_popular h2
     {
       font-size: 14px;
-      padding: 0 0 0 5px;
-      margin-bottom: 0px;
+      padding-top: 5px;
+      padding-bottom: 10px;
     }
 
     .card_popular p
     {
-      padding: 0  0 0 5px;
       font-size: 12px;
     }
 
     .card_popular .notation
     {
-      margin: 0;
-      padding-left: 5px;
+      padding-top: 90px;
     }
 
     /*Lodging section - "Lodging" - small mobile*/
@@ -1527,13 +1582,9 @@ footer li:hover
       margin-bottom: 25px;
     }
 
-    main section:nth-child(3) article:first-child header h1
+    main section:nth-child(3) article header h1
     {
       font-size: 18px;
-      margin: 0;
-      margin-top: 40px;
-      margin-bottom:20px;
-      margin-left: 7%;
     }
 
     .card_lodging
@@ -1546,23 +1597,32 @@ footer li:hover
       height: 110px;
     }
 
-    .card_lodging .notation
+    .card_lodging h2
     {
-      margin-top: 0;
+      font-size: 14px;
     }
 
-    main section:nth-child(3) article:first-child footer
+    .card_lodging p
     {
-      margin-left: 6%;
-      padding: 0;
+      font-size: 12px;
+    }
+
+    main section:nth-child(3) footer a
+    {
+      font-size: 18px;
     }
 
     /* Activities section - small mobile*/
 
-    main section:nth-child(4) header
+    main section:last-child header
     {
       padding-left: 7%;
       margin: 0;
+    }
+
+    main section:last-child header h1
+    {
+      font-size: 18px;
     }
 
     .card_activities
