@@ -708,8 +708,7 @@ footer li:hover
   main section:nth-child(3) aside header
   {
       margin: auto;
-      
-      padding: 0 24% 0 25%;
+      padding: 0 24% 0 26%;
   }
 
   main section:nth-child(3) aside header h2
@@ -1057,6 +1056,13 @@ footer li:hover
   {
     font-size: 25px;
   }
+
+  main section:nth-child(3) aside header span
+  {
+    padding-right: 0;
+  }
+  
+  
   
   main section:nth-child(3) aside div
   {
@@ -1130,8 +1136,9 @@ footer li:hover
     width: 100%;
     height: auto;
     margin: 0;
-    padding-right: 130px;
     text-align: center;
+    padding-left: 0;
+    padding-right: 145px;
   }
 
   #lodging_city
@@ -1427,12 +1434,12 @@ footer li:hover
       text-align: left;
       width: auto;
       margin-top: 0;
-      padding-left: 35px;
+      padding-left: 8%;
     }
 
     main section:nth-child(3) aside header span
     {
-      padding-right: 35px;
+      padding-right: 8%;
       margin: 0;
     }
 
@@ -1470,7 +1477,7 @@ footer li:hover
       width: auto;
       text-align: left;
       padding-right: 0;
-      padding-left: 8%;
+      padding-left: 5%;
       font-size: 22px;
     }
   
