@@ -170,7 +170,6 @@ main section:first-child h3
 { 
   font-weight: bold;
   font-size: 16px;
-  margin: 10px 0 0 0;
   padding-left: 10px;
 }
 
@@ -183,10 +182,9 @@ section:first-child span
   background-color: #DEEBFF;
   padding: 14px;
   border-radius: 50px;
-  margin: -3px 15px 0 0;
-  margin-top: -3px;
-  margin-left: -10px;  
+  margin: -3px 10px 0 -10px;
 }
+
 
 /* Filters buttons - desktop */ 
 
@@ -208,13 +206,27 @@ section:first-child span
   background-position:right bottom;
 }
 
-.filter_buttons:hover
+ .filter_buttons:hover
 {
-  border-color: #DEEBFF;
   background-color: #DEEBFF;
   background-position:left bottom;
-  transition: 2s ease;
+  transform:translateX(10px);
+  transition:all 1.6s ease;
 }
+
+.filter_buttons:hover span
+{
+  transform: rotateY(360deg);
+  margin-right: 0;
+  transition: 1.4s ease;
+}
+
+.filter_buttons:hover h3
+{
+  padding-left: 10px;
+}
+
+
 
 /* Information section - desktop*/
 
