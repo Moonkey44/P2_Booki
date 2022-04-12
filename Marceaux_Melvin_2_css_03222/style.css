@@ -611,7 +611,7 @@ footer li:hover
 
   /* Header - search form - tablet*/
 
-  #position_form
+  #position-form
   {
     border-radius: 12px 0 0 12px;
   }
@@ -1375,7 +1375,7 @@ footer li:hover
       margin-left: 3%;
     }
 
-    #position_form
+    #position-form
     {
       height: 50px;
       width: 50px;
@@ -1541,7 +1541,7 @@ footer li:hover
       margin-bottom: 0;
     }
 
-    #position_form
+    #position-form
     {
       height: 45px;
       width: 45px;
