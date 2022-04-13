@@ -175,11 +175,11 @@ main section:first-child h2
 section:first-child span
 {
   width: 50px;
-  height: 48px;
+  height: 50px;
   font-size:18px;
   color:#0065FC;
   background-color: #DEEBFF;
-  padding: 14px;
+  padding: 15px;
   border-radius: 50px;
   margin:-3px 10px 0 -10px;
 }
@@ -192,14 +192,14 @@ section:first-child span
   display: flex;
   font-size: 16px;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 42px;
   background-color: white;
   border: 2px #F2F2F2 solid;
   border-radius: 100px;
   padding-right: 15px;
   margin-right: 20px;
   margin-bottom: 10px;
-  height: 48px;
+  height: 50px;
   background: linear-gradient(to right, #DEEBFF 50%, white 50%);
   background-size: 200% 100%;
   background-position:right bottom;
@@ -209,14 +209,14 @@ section:first-child span
 {
   background-color: #DEEBFF;
   background-position:left bottom;
-  transition: 1.4s ease;
+  transition: 1.3s ease-out;
 }
 
 .filter-buttons:hover span
 {
-  transform: translateX(10px) rotateY(360deg);
+  transform: translateX(11px) rotateY(360deg);
   padding-left: 10px;
-  transition: 1.2s ease;
+  transition: 1.6s ease;
 }
 
 
@@ -584,6 +584,7 @@ footer li:hover
 
 @media screen and (max-width: 992px)
 {
+
   main
   {
     margin: 0;
