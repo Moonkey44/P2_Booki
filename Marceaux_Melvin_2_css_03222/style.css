@@ -175,11 +175,11 @@ main section:first-child h2
 section:first-child span
 {
   width: 50px;
-  height: 50px;
+  height: 48px;
   font-size:18px;
   color:#0065FC;
   background-color: #DEEBFF;
-  padding: 15px;
+  padding: 16px;
   border-radius: 50px;
   margin:-3px 10px 0 -10px;
 }
@@ -199,7 +199,7 @@ section:first-child span
   padding-right: 15px;
   margin-right: 20px;
   margin-bottom: 10px;
-  height: 50px;
+  height: 48px;
   background: linear-gradient(to right, #DEEBFF 50%, white 50%);
   background-size: 200% 100%;
   background-position:right bottom;
@@ -209,14 +209,16 @@ section:first-child span
 {
   background-color: #DEEBFF;
   background-position:left bottom;
-  transition: 1.3s ease-out;
+  transition: 1.2s ease-out;
 }
 
 .filter-buttons:hover span
 {
-  transform: translateX(11px) rotateY(360deg);
-  padding-left: 10px;
-  transition: 1.6s ease;
+  transform: translateX(10px) rotateY(360deg);
+  margin-top: -1px;
+  padding: 14px;
+  height: 30px;
+  transition: 1.4s ease;
 }
 
 
