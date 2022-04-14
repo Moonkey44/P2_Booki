@@ -174,9 +174,9 @@ main section:first-child h2
 
 section:first-child span
 {
-  width: 50px;
+  width: 48px;
   height: 48px;
-  font-size:17px;
+  font-size:18px;
   color:#0065FC;
   background-color: #DEEBFF;
   padding: 15px;
@@ -218,7 +218,7 @@ section:first-child span
 {
   transform: translateX(10px) rotateY(360deg);
   margin-top: -1px;
-  padding-top: 14px;
+  padding-top: 13px;
   height: 40px;
   transition: 1.3s ease;
 }
