@@ -218,9 +218,9 @@ section:first-child span
 {
   transform: translateX(10px) rotateY(360deg);
   margin-top: -1px;
-  padding: 14px;
-  height: 44px;
-  transition: 1.2s ease;
+  padding-top: 14px;
+  height: 40px;
+  transition: 1.4s ease;
 }
 
 
