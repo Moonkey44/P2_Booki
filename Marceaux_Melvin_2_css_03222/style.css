@@ -211,7 +211,7 @@ section:first-child span
 {
   background-color: #DEEBFF;
   background-position:left bottom;
-  transition: 1.3s ease-out;
+  transition: 1.4s ease-out;
 }
 
 .filter-buttons:hover span
@@ -220,7 +220,7 @@ section:first-child span
   margin-top: -1px;
   padding-top: 14px;
   height: 40px;
-  transition: 1.4s ease;
+  transition: 1.3s ease;
 }
 
 
