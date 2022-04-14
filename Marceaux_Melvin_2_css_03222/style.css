@@ -205,6 +205,8 @@ section:first-child span
   background-position:right bottom;
 }
 
+/* Buttons filter animation */
+
  .filter-buttons:hover
 {
   background-color: #DEEBFF;
