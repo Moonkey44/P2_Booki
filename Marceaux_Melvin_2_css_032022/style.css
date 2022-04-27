@@ -226,11 +226,10 @@ main
 
 /* Information section - desktop*/
 
-section:nth-child(2)
+.information-div
 {
   display: flex;
   font-size: 15px;
-  margin-bottom: 25px;
 }
 
 #information
@@ -247,7 +246,7 @@ section:nth-child(2)
   border-radius: 100%;
 }
 
-section:nth-child(2) p
+.information-div p
 {
   line-height: 60px;
 }
@@ -656,7 +655,7 @@ section:last-child article
 
   /* Information section - tablet*/
 
-  main section:nth-child(2)
+  .information-div
   {
     justify-content: center;
     margin-right: 50px;
@@ -1026,7 +1025,7 @@ section:last-child article
 
   /* Information section - hight mobile*/
 
-  main section:nth-child(2)
+  .information-div
   {
     width: 100%;
     padding-left: 3%;
@@ -1392,13 +1391,13 @@ section:last-child article
 
     /* Information section - medium mobile*/
     
-    main section:nth-child(2)
+    .information-div
     {
       width: 100%;
       padding-left: 3%;
     }
 
-    section:nth-child(2) p
+    .information-div p
     {
       line-height:normal;
       margin-top: 15px;
