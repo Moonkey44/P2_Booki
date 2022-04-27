@@ -143,7 +143,7 @@ main
 
 /* Filters section - desktop */ 
 
-main section:first-child
+.filters
 {
   display: flex;
   padding-left: 8px;
@@ -151,7 +151,7 @@ main section:first-child
   margin-bottom: 10px;
 }
 
-main section:first-child h2
+.filters h2
 { 
   align-self: center;
   font-size: 16px;
@@ -160,28 +160,16 @@ main section:first-child h2
   height: 20px;
 }
 
-main section:first-child div
+.filters div
 {
   display: flex;
 }
 
-main section:first-child h2
+.filters h2
 { 
   font-weight: bold;
   font-size: 16px;
   padding-left: 10px;
-}
-
-section:first-child span
-{
-  width: 48px;
-  height: 48px;
-  font-size:18px;
-  color:#0065FC;
-  background-color: #DEEBFF;
-  padding: 15px;
-  border-radius: 50px;
-  margin:-3px 10px 0 -10px;
 }
 
 
@@ -212,6 +200,18 @@ section:first-child span
   background-color: #DEEBFF;
   background-position:left bottom;
   transition: 1.4s ease-out;
+}
+
+.filter-buttons span
+{
+  width: 48px;
+  height: 48px;
+  font-size:18px;
+  color:#0065FC;
+  background-color: #DEEBFF;
+  padding: 15px;
+  border-radius: 50px;
+  margin:-3px 10px 0 -10px;
 }
 
 .filter-buttons:hover span
@@ -253,61 +253,57 @@ section:nth-child(2) p
 }
 
 /*Lodging section - "Lodging" - desktop*/
-
-section:nth-child(3)
+.lodging-section
 {
   display: flex;
-  width: 100%; 
-  margin-bottom: 60px;
+  width: 100%;
+  padding-top: 20px;
 }
 
-section:nth-child(3) article
+.lodging
 {
-  width: 70%;
-  border-radius: 12px;
   background-color: #F2F2F2;
-  display: flex;
-  flex-direction: column;
+  padding-top: 40px;
+  border-radius: 18px;
 }
 
-section:nth-child(3) article header
+.lodging header
 {
   margin-left: 0;
-  padding-left: 3%;
+  padding-left: 4%;
+  padding-bottom: 20px;
 }
 
-section:nth-child(3) header h2
+.lodging header h2
 {
+  width: 100%;
   font-size: 18px;
-  padding-top: 40px;
   text-align: left;
 }
 
-#lodging-city
+.lodging article
 {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  height: 450px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 0 20px 0 20px;
 }
 
 .card-lodging
 { 
   border: 1px solid white;
   border-radius: 18px;
-  width: 28%;
-  height: 180px;
+  width: 30%;
+  height: 210px;
   background-color: white;
   margin: 0 0 25px 0;
-  padding: 5px;
+  padding: 4px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .card-lodging:hover
 {
-  
   transition: 0.5s;
   transform: scale(1.1);
 }
@@ -315,8 +311,9 @@ section:nth-child(3) header h2
 .card-lodging img
 {
   width: 100%;
-  height: 100px;
-  object-fit:cover;
+  height: 130px;
+  -o-object-fit:cover;
+     object-fit:cover;
   border-radius: 12px 12px 0 0;
 }
 
@@ -339,44 +336,45 @@ section:nth-child(3) header h2
   margin: 8px 0 0 8px;
 }
 
-section:nth-child(3) footer
+.lodging footer
 {
+  padding:15px 0 35px 30px;
   font-weight: bold;
-  height: 17px;
-  margin: 10px 0 15px 0;
+  border-radius: 18px;
+  font-size: 18px;
 }
 
 /* Lodging section - "Populars lodging" - desktop*/
 
-section:nth-child(3) aside
+.lodging-section aside
 {
-  width: 28%;
-  border-radius: 12px;
+  width: 40%;
+  border-radius: 18px;
   background-color:#F2F2F2;
-  margin: 0 0 0 5%;
+  margin: 0 0 0 3%;
 }
 
-section:nth-child(3) aside header
+.lodging-section aside header
 {
   display: flex;
   margin-left: 0px;
   justify-content: space-between;
-  padding: 0 8% 0 8%;
+  padding: 0px 10% 0 10%;
 }
 
-section:nth-child(3) aside header h2
+.lodging-section aside header h2
 {
   font-size: 20px;
   padding-top: 40px;
 }
 
-section:nth-child(3) aside header span
+.lodging-section aside header span
 {
   margin-top: 41px;
   font-size: 18px;
 }
 
-section:nth-child(3) aside div
+.lodging-section aside article
 {
   display: flex;
   flex-direction: column;
@@ -387,10 +385,10 @@ section:nth-child(3) aside div
 {
   border-radius: 18px;
   background-color: white;
-  width: 85%;
-  height: 130px;
+  width: 80%;
+  height: 145px;
   display: flex;
-  padding: 5px 5px 5px 5px;
+  padding: 4px;
   margin: 20px 0 5px 0;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -411,14 +409,16 @@ section:nth-child(3) aside div
 {
   display: flex;
   flex-direction: column;
-  padding-left: 15px; 
+  padding-left: 15px;
+  position: relative;
 }
 
 .card-popular img
 {
   width: 45%;
   height: 100%;
-  object-fit:cover;
+  -o-object-fit:cover;
+     object-fit:cover;
   border-radius: 14px 0 0 14px;
 }
 
@@ -479,7 +479,8 @@ section:last-child article
 {
   border-radius: 20px 20px 0 0;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-activities h3
@@ -553,7 +554,7 @@ section:last-child article
 
 /* FOOTER - desktop*/
 
-footer
+.footer
 {
   background-color: #F2F2F2;
   display:flex;
@@ -562,25 +563,25 @@ footer
   padding-left: 3%;
 }
 
-footer h2
+.footer h2
 {
   font-size: 16px;
   margin-bottom:18px;
 }
 
-footer div
+.footer div
 {
   margin-top: 40px;
   padding-right: 18%;
 }
 
-footer li
+.footer li
 {
   margin-top: 10px;
   font-size: 14px;
 }
 
-footer li:hover
+.footer li:hover
 {
   text-decoration: underline;
 }
@@ -635,12 +636,12 @@ footer li:hover
 
   /* Filters section - tablet */ 
 
-  main section:first-child h2
+  .filters h2
   {
     margin-bottom: 20px;
   }
 
-  main section:first-child div
+  .filters div
   {  
     flex-wrap: wrap;
     justify-content: center;
@@ -663,28 +664,31 @@ footer li:hover
 
   /*Lodging section - "Lodging" - tablet*/
 
-  main section:nth-child(3)
+  .lodging-section
   {
     width: 100%;
     flex-direction: column-reverse;
   }
 
-  main section:nth-child(3) header
+  .lodging{
+    padding-top: 20px;
+    border-radius: 0px;
+  }
+
+  .lodging header
   {
     margin: 0;
   }
 
-  main section:nth-child(3) header h2
+  .lodging header h2
   {
     margin: 3% 0 3% 0;
     text-align: center;
     width: 100%;
     font-size: 21px;
   }
-
-  main section:nth-child(3) article
-  {
-    width: 100%;
+  
+  .lodging footer{
     border-radius: 0px;
   }
 
@@ -705,21 +709,22 @@ footer li:hover
 
   /* Lodging section - "Populars" - tablet*/
 
-  main section:nth-child(3) aside
+  .lodging-section aside
   {
     width: 100%;
     margin: 0;
+    padding-bottom: 40px;
     margin-bottom: 5%;
     border-radius: 0px;
   }
 
-  main section:nth-child(3) aside header
+  .lodging-section aside header
   {
       margin: auto;
       padding: 0 24% 0 26%;
   }
 
-  main section:nth-child(3) aside header h2
+  .lodging-section aside header h2
   {
     margin: 25px 0 25px 0;
     padding-left: 5px;
@@ -728,14 +733,14 @@ footer li:hover
     text-align: left;
   }
 
-  main section:nth-child(3) aside header span
+  .lodging-section aside header span
   {
     font-size: 20px;
     margin: 25px 0 0 0;
     padding-right: 5px;
   }
 
-  main section:nth-child(3) aside div
+  .lodging-section aside div
   {
     display: flex;
     width: 100%;
@@ -843,17 +848,17 @@ footer li:hover
 
   /* FOOTER - tablet*/
 
-  footer div
+  .footer div
 {
   padding-right: 14%;
 }
 
-  footer h1
+  .footer h1
   {
     font-size: 14px;
   }
 
-  footer li
+  .footer li
   {
     font-size: 13px;
   }
@@ -918,14 +923,14 @@ footer li:hover
 
   header h1
   {
-    font-size: 24px;
+    font-size: 36px;
     height: 100%;
     width: 100%;
   }
 
   header p
   {
-    font-size: 20px;
+    font-size: 22px;
     width: 100%;
   }
 
@@ -944,7 +949,7 @@ footer li:hover
 
   #position-form
   {
-    font-size: 19px;
+    font-size: 24px;
     height: 60px;
     width: 60px;
   }
@@ -979,29 +984,30 @@ footer li:hover
   /* MAIN - hight mobile */
   main
   {
+    width: 100%;
     margin: 0;
   }
 
   /* Filters section - hight mobile*/ 
 
-  main section:first-child
+  .filters
   {
     width: 100%;
     padding-left: 3%;
   }
 
-  main section:first-child h2
+  .filters h2
   {
     align-self: inherit;
-    font-size: 22px;
+    font-size: 24px;
   }
 
-  main section:first-child p
+  .filters p
   {
     padding-left: 10px;
   }
 
-  main section:first-child div
+  .filters div
   {
     justify-content: left;
   }
@@ -1030,33 +1036,31 @@ footer li:hover
 
   /* Lodging section - "Populars" - hight mobile*/
 
-  main section:nth-child(3) aside
+  .lodging-section aside
   {
     margin: 0;
     width: 100%;
-    height: 100%;
     flex-direction: column;
+    padding-bottom: 20px;
   }
 
-  main section:nth-child(3) aside header
+  .lodging-section aside header
   {
     width: 450px;
-    padding: 0;
+    padding: 20px 0 0 0;
   }
 
-  main section:nth-child(3) aside header h2
+  .lodging-section aside header h2
   {
-    font-size: 25px;
+    font-size: 26px;
   }
 
-  main section:nth-child(3) aside header span
+  .lodging-section aside header span
   {
     padding-right: 0;
   }
   
-  
-  
-  main section:nth-child(3) aside div
+  .lodging-section aside article
   {
     display: flex;
     flex-direction: column;
@@ -1103,68 +1107,54 @@ footer li:hover
 
   /*Lodging section - "Lodging" - hight mobile*/
 
-  main section:nth-child(3) article
-  {
-    background-color: white;
-    width: 100%;
-  }
-
-  main section:nth-child(3)
+  .lodging-section
   {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 20px;
   }
 
-  main section:nth-child(3) article header
+  .lodging
   {
-    margin-top: 40px;
-    margin-bottom: 25px;
+    background-color: white;
+    width: 100%;
+    padding: 0;
   }
 
-  main section:nth-child(3) article header h2
+  .lodging header
   {
-    font-size: 25px;
+    margin-top: 45px;
+  }
+
+  .lodging header h2
+  {
+    font-size: 26px;
     width: 100%;
     height: auto;
     margin: 0;
     text-align: center;
     padding-left: 0;
-    padding-right: 145px;
+    padding-top: 0;
+    padding-right: 140px;
   }
 
-  #lodging-city
+  #lodging-city{
+    padding: 0;
+  }
+
+  .lodging footer
   {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    height: 100%;
-    flex-wrap: nowrap;
+    padding: 0 300px 0 0;
+    display: flex;
+    justify-content: center;
   }
 
-  section:nth-child(3) footer
-  {
-    background-color: white;
-    align-items: center;
-    padding-right: 350px;
-  }
-
-  section:nth-child(3) footer p
+  .lodging footer p
   {
     font-size: 22px;
     width: 150px;
-  }
-
-  main section:nth-child(3) article.notation
-  {
-    display: flex;
-    flex-direction: row;
-  }
-
-  main section:nth-child(3) .blue-star, .default-star
-  {
-    font-size: 14px;
+    margin: 0;
   }
 
   .card-lodging
@@ -1245,6 +1235,7 @@ footer li:hover
   {
     text-align: center;
     font-size: 25px;
+    margin-bottom: 30px;
   }
 
   main section:nth-child(4) article
@@ -1261,7 +1252,7 @@ footer li:hover
     margin-bottom: 30px;
     max-width: 450px;
     width: 85%;
-    height: 250px;
+    height: 260px;
   }
 
   .card-activities h3
@@ -1302,40 +1293,43 @@ footer li:hover
 
   /* FOOTER - hight mobile*/
 
-  footer
+  .footer
   {
     flex-direction: column;
     height: auto;
   }
 
-  footer h2
+  .footer h2
   {
     font-size: 21px;
     margin-top: 50px;
     margin-bottom: 30px;
   }
 
-  footer div
+  .footer div
   {
     padding-right: 0;
     margin-left: 5%;
     margin-top: 0;
   }
 
-  footer ul
+  .footer ul
   {
     width:auto;
   }
 
-  footer li
+  .footer li
   {
     font-size: 16px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
 }
 
   @media screen and (max-width: 520px)
   {
+    html{
+      width: 100%;
+    }
 
     /* Header - medium mobile*/
 
@@ -1390,7 +1384,7 @@ footer li:hover
 
     /* MAIN - filters section - medium mobile*/ 
 
-    main section:first-child
+    .filters
     {
       width: 100%;
       padding-left: 3%;
@@ -1413,30 +1407,35 @@ footer li:hover
 
     /* Lodging section - "Populars" - medium mobile*/
 
-    main section:nth-child(3) aside header
+    .lodging-section aside{
+      padding-bottom: 20px;
+    }
+
+    .lodging-section aside header
     {
       width: 100%;
       justify-content: space-between;
       padding-top: 20px;
     }
 
-    main section:nth-child(3) aside header h2
+    .lodging-section aside header h2
     {
       font-size: 22px;
       text-align: left;
       width: auto;
       margin-top: 0;
-      padding-left: 8%;
+      padding-left: 6%;
     }
 
-    main section:nth-child(3) aside header span
+    .lodging-section aside header span
     {
-      padding-right: 8%;
+      padding-right: 6%;
       margin: 0;
     }
 
     .card-popular
     {
+      width: 88%;
       height: 160px;
     }
 
@@ -1464,26 +1463,44 @@ footer li:hover
 
     /*Lodging section - "Lodging" - medium mobile*/
 
-    main section:nth-child(3) article header h2
+    .lodging header{
+      
+      padding-left: 6%;
+    }
+
+    .lodging header h2
     {
-      width: auto;
       text-align: left;
       padding-right: 0;
-      padding-left: 5%;
       font-size: 22px;
     }
+
+    .lodging article{
+      padding: 0;
+    }
   
-    main section:nth-child(3) article footer
+    .lodging footer
     {
-      margin-left: 4%;
+      margin-left: 6%;
+      padding: 0;
+      justify-content: left;
       font-size: 20px;
+    }
+
+    .card-lodging{
+      height: 220px;
+      width: 88%;
+    }
+
+    .card-lodging img{
+      height:125px;
     }
 
     /* Activities section - medium mobile*/
 
     main section:last-child header
     {
-      padding: 0 0 0 8%;  
+      padding: 0 0 0 6%;  
     }
 
     main section:last-child header h2
@@ -1491,9 +1508,22 @@ footer li:hover
       text-align: left;
     }
 
+    .card-activities{
+      width: 88%;
+      height: 220px;
+    }
+
+    .card-activities img{
+      max-height: 155px;
+    }
+
+    .card-activities h3{
+      margin: 0 0 0 20px;
+    }
+
     /* FOOTER - medium mobile*/
 
-    footer div
+    .footer div
     {
       margin-left: 5%;
     }
@@ -1531,42 +1561,42 @@ footer li:hover
 
     #position-form
     {
-      height: 45px;
-      width: 45px;
+      height: 40px;
+      width: 40px;
       font-size: 14px;
       border-radius: 13px 0 0 13px;
     }
 
-    input[ type="search"]
+    input[type="search"]
     {
       font-size: 14px;
-      width: 180px;
-      height: 45px;  
+      width: 190px;
+      height: 40px;  
     }
 
     #loop
     {
       font-size: 16px;
-      height: 45px;
-      width: 45px;
+      height: 40px;
+      width: 40px;
       padding-top: 13px;
       border-radius: 15px;
-      margin-left: 210px;
+      margin-left: 215px;
     }
 
     /* MAIN - filters section - small mobile*/
 
-    main section:first-child
+    .filters
     {
       margin-left: 5%;
     }
 
-    main section:first-child h2
+    .filters h2
     {
       font-size: 18px;
     }
 
-    main section:first-child p
+    .filters p
     {
       font-size: 15px;
     }
@@ -1581,13 +1611,13 @@ footer li:hover
 
     /* Lodging section - "Populars" - small mobile*/
 
-    main section:nth-child(3) aside header h2
+    .lodging-section aside header h2
     {
       font-size: 18px;
       padding-left: 25px;
     }
 
-    main section:nth-child(3) aside header span
+    .lodging-section aside header span
     {
       padding-right: 25px;
     }
@@ -1620,19 +1650,18 @@ footer li:hover
 
     /*Lodging section - "Lodging" - small mobile*/
 
-    main section:nth-child(3)
+    .lodging-section
     {
       margin-bottom: 25px;
     }
 
-    main section:nth-child(3) article header h2
+    .lodging header h2
     {
       font-size: 18px;
     }
 
-    .card-lodging
-    {
-      height: 200px;
+    .card-lodging{
+      height: 190px;
     }
 
     .card-lodging img
@@ -1650,7 +1679,11 @@ footer li:hover
       font-size: 12px;
     }
 
-    main section:nth-child(3) footer a
+    .lodging footer{
+      margin-left: 8%;
+    }
+
+    .lodging footer a
     {
       font-size: 18px;
     }
@@ -1687,12 +1720,12 @@ footer li:hover
 
     /* FOOTER - small mobile*/
 
-    footer div
+    .footer div
     {
       margin-left: 10px;
     }
 
-    footer li
+    .footer li
     {
       font-size: 16px;
     }

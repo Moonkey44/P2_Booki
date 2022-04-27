@@ -4,9 +4,9 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
-    <link rel="stylesheet" href="Marceaux_Melvin_2_css_03222/reset.css" type="text/css">
-    <link rel="stylesheet" href="Marceaux_Melvin_2_css_03222/normalize.css" type="text/css"> 
-    <link rel="stylesheet" href="Marceaux_Melvin_2_css_03222/style.css" type="text/css">    
+    <link rel="stylesheet" href="Marceaux_Melvin_2_css_032022/reset.css" type="text/css">
+    <link rel="stylesheet" href="Marceaux_Melvin_2_css_032022/normalize.css" type="text/css"> 
+    <link rel="stylesheet" href="Marceaux_Melvin_2_css_032022/style.css" type="text/css">    
     <script src="https://kit.fontawesome.com/2d2374fe7a.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="favicon.png">
   </head>
@@ -39,7 +39,7 @@
     <!-- MAIN -->
 
     <main>    
-      <section>
+      <section class="filters">
         <h2>Filtres</h2>
         <div>
           <button class="filter-buttons">
@@ -60,12 +60,12 @@
         <span id="information" class="fa-solid fa-info"></span>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </section>
-      <section id="lodging">
-        <article>
+      <div class="lodging-section">
+        <section class="lodging">
           <header>
             <h2>Hébergements à Marseille</h2>
           </header>
-          <div id="lodging-city">
+          <article id="lodging-city">
             <a href="#" class="card-lodging">
             <figure> 
                 <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière"/>
@@ -78,77 +78,77 @@
                 </figcaption>           
             </figure>
             </a>
-          <a href="#" class="card-lodging">
-            <figure>              
-                <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"/>
-                <figcaption>
-                  <h3>Hôtel de la mer</h3>
-                  <p>Nuit à partir de 46€</p>
-                  <div class="notation">
-                    <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star default-star"></span><span class="fa-solid fa-star default-star"></span>
-                  </div>
-                </figcaption>        
-          </figure>
-          </a>
-            <a href="#" class="card-lodging">
-              <figure>             
-                  <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"/>
-                  <figcaption>
-                    <h3>Hôtel du port</h3>
-                    <p>Nuit à partir de 52€</p>
-                    <div class="notation">
-                      <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span>
-                    </div>
-                  </figcaption>              
-              </figure>
-            </a>
-            <a href="#" class="card-lodging">
-              <figure>
-                  <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"/>
-                  <figcaption>
-                    <h3>Auberge Le Panier</h3>
-                    <p>Nuit à partir de <strong>23€</strong></p>
-                    <div class="notation">
-                      <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star default-star"></span>
-                    </div>
-                  </figcaption>           
-              </figure>
-            </a>
             <a href="#" class="card-lodging">
               <figure>              
-                  <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes"/>
+                  <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"/>
                   <figcaption>
-                    <h3>Hôtel les mouettes</h3>
-                    <p>Nuit à partir de 76€</p>
+                    <h3>Hôtel de la mer</h3>
+                    <p>Nuit à partir de 46€</p>
                     <div class="notation">
-                      <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star default-star"></span>
+                      <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star default-star"></span><span class="fa-solid fa-star default-star"></span>
                     </div>
-                  </figcaption>             
-              </figure>
+                  </figcaption>        
+            </figure>
             </a>
-            <a href="#" class="card-lodging">
-              <figure>
-                  <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/>
-                  <figcaption>
-                    <h3>Hôtel chez Amina</h3>
-                    <p>Nuit à partir de 96€</p>
-                    <div class="notation">
-                      <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span>
-                    </div>
-                  </figcaption>
-              </figure>
-            </a>
-          </div>
+              <a href="#" class="card-lodging">
+                <figure>             
+                    <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"/>
+                    <figcaption>
+                      <h3>Hôtel du port</h3>
+                      <p>Nuit à partir de 52€</p>
+                      <div class="notation">
+                        <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span>
+                      </div>
+                    </figcaption>              
+                </figure>
+              </a>
+              <a href="#" class="card-lodging">
+                <figure>
+                    <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"/>
+                    <figcaption>
+                      <h3>Auberge Le Panier</h3>
+                      <p>Nuit à partir de <strong>23€</strong></p>
+                      <div class="notation">
+                        <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star default-star"></span>
+                      </div>
+                    </figcaption>           
+                </figure>
+              </a>
+              <a href="#" class="card-lodging">
+                <figure>              
+                    <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes"/>
+                    <figcaption>
+                      <h3>Hôtel les mouettes</h3>
+                      <p>Nuit à partir de 76€</p>
+                      <div class="notation">
+                        <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star default-star"></span>
+                      </div>
+                    </figcaption>             
+                </figure>
+              </a>
+              <a href="#" class="card-lodging">
+                <figure>
+                    <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/>
+                    <figcaption>
+                      <h3>Hôtel chez Amina</h3>
+                      <p>Nuit à partir de 96€</p>
+                      <div class="notation">
+                        <span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span><span class="fa-solid fa-star blue-star"></span>
+                      </div>
+                    </figcaption>
+                </figure>
+              </a>
+          </article>
           <footer>
             <p><a href="#">Afficher plus</a></p>
           </footer>
-        </article>
-        <aside>
+        </section>
+        <aside id="lodging">
           <header>
             <h2>Les plus populaires</h2>
             <span class="fa-solid fa-chart-line"></span>
           </header>
-          <div>
+          <article>
             <a href="#" class="card-popular">
               <figure>
                 <img src="/Marceaux_Melvin_1_assets_032022/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" />
@@ -185,9 +185,9 @@
                   </figcaption>
               </figure>
             </a>
-          </div>
+          </article>
         </aside>
-      </section>
+      </div>
       <section id="activities">
         <header>
           <h2>Activités à Marseille</h2>
@@ -247,7 +247,7 @@
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer class="footer">
       <div>
         <h2>A propos</h2>
         <nav>
